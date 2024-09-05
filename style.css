@@ -169,18 +169,18 @@ body {
     width: 250px;
   }
   .banner .product {
-    animation: animateProduct 2s forwards 0.5s;
+    animation: animateProduct 2s forwards;
   }
 
   .banner .rock img:nth-child(1) {
-    animation: animateRock1 2s forwards 0.5s;
+    animation: animateRock1 2s forwards;
   }
 
   .banner .rock img:nth-child(2) {
-    animation: animateRock2 2s forwards 0.5s;
+    animation: animateRock2 2s forwards;
   }
 
   .banner .rock img:nth-child(3) {
-    animation: animateRock3 2s forwards 0.5s;
+    animation: animateRock3 2s forwards;
   }
 }
