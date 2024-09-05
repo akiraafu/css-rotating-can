@@ -106,6 +106,59 @@ body {
   opacity: 1;
 }
 
+/* Keyframes for the product animation */
+@keyframes animateProduct {
+  0% {
+    --left: 0;
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    --left: 1060px;
+    transform: translateX(-50%) translateY(-120px);
+  }
+  100% {
+    --left: 0;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+/* Keyframes for the rocks animation */
+@keyframes animateRock1 {
+  0% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(50px);
+  }
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+@keyframes animateRock2 {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(100px) translateY(100px);
+  }
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+}
+
+@keyframes animateRock3 {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(100px) translateY(100px);
+  }
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+}
+
 @media screen and (max-width: 1023px) {
   .soda {
     width: 400px;
@@ -114,5 +167,20 @@ body {
 @media screen and (max-width: 767px) {
   .soda {
     width: 250px;
+  }
+  .banner .product {
+    animation: animateProduct 2s forwards 0.5s;
+  }
+
+  .banner .rock img:nth-child(1) {
+    animation: animateRock1 2s forwards 0.5s;
+  }
+
+  .banner .rock img:nth-child(2) {
+    animation: animateRock2 2s forwards 0.5s;
+  }
+
+  .banner .rock img:nth-child(3) {
+    animation: animateRock3 2s forwards 0.5s;
   }
 }
